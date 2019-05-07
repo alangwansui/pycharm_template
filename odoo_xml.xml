@@ -1,16 +1,12 @@
 <templateSet group="Odoo-XML">
-  <template name="openerp_tag" value="&lt;openerp&gt;&#10;    &lt;data&gt;&#10;    &#10;    &#10;    &lt;/data&gt;&#10;&lt;/openerp&gt;" description="openerp_tag" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="XML" value="true" />
-    </context>
-  </template>
+
   <template name="act_window" value="&lt;act_window name=&quot;$string$&quot;&#10;    domain=&quot;[('field', 'condition', active_id)]&quot;&#10;    res_model=&quot;res_model&quot;&#10;    src_model=&quot;src_model&quot;&#10;    id=&quot;act_unique_id&quot;/&gt;" description="act_window" toReformat="false" toShortenFQNames="true">
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="button_object" value="&lt;button name=&quot;$function_name$&quot; states=&quot;$state$&quot; string=&quot;$string$&quot; type=&quot;$object$&quot; icon=&quot;$icon$&quot;/&gt;" description="button_object" toReformat="false" toShortenFQNames="true">
+  <template name="button_object" value="&lt;button name=&quot;$function_name$&quot; states=&quot;$state$&quot; string=&quot;$string$&quot; type='object' icon=&quot;$icon$&quot;/&gt;" description="button_object" toReformat="false" toShortenFQNames="true">
     <variable name="function_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="string" expression="" defaultValue="" alwaysStopAt="true" />
